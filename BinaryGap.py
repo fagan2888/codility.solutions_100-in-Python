@@ -20,6 +20,9 @@ def get_one(S: str):
           
 def solution(N: int):
     
+    if type(N) != int:
+        raise TypeError(str(N)+' is not an interger!')
+    
     bN = "{0:b}".format(N)
     index_1 = get_one(bN)
     dist = []
