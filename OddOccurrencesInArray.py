@@ -13,14 +13,15 @@ def solution(A):
     if len(A) //2 == 1:
        raise ValueError('String needs to be odd length array')
     
-    no_pair = dict()
+    no_pair = {}
     
     for num in A:
-       if num in no_pair:
+       if num in no_pair.keys():
           del no_pair[num]
        else:
            no_pair[num]=num
-    
+           
+
     for i in no_pair:
         odd = no_pair[i]
     
