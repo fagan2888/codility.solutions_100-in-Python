@@ -14,7 +14,7 @@ def solution(A):
     return min([abs(2 * x - L[-1]) for x in L[:-1]])
     
     
- ########################   53% score codes 100% correct but O(n^2) complexity
+########################   53% score codes 100% correct but O(n^2) complexity
  
  #    N=len(A)
 #    p_sum = [sum(A[0:i]) for i in range(1,N+1)]
